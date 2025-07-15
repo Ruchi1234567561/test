@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Transform Property</title>
+		<style>
+			.box{
+				height:200px;
+				width:200px;
+				background:red;
+				margin:100px auto;
+				transition:all ease 2s;
+			}
+			.box:hover{
+				/*transform:translate(20px, 80px,);*/
+				/*transform:translateX(20px);*/
+				/*transform:translateY(-100px);*/
+				/*transform:rotate(360deg);*/
+				/*transform:skew(45deg);*/
+				transform:skewX(60deg);
+				/*transform:scale(2);*/
+				border-radius:50%;
+				background:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

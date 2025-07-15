@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<style>
+			div{
+				height:300px;
+				width:300px;
+				margin:auto;
+				border:10px double teal;
+			}
+			div img{
+				height:100%;
+				width:100%;
+				object-fit:cover;
+			}
+			button{
+				margin-top:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="images/light-bulb.png" id="im">
+			<button onmouseover="SetImage()">Set Image</button>
+			<script>
+				function SetImage(){
+					const image=document.querySelector("#im");
+					image.src="images/image1.jpeg";
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<style>
+			div{
+				margin:0px auto;
+			}
+			img{
+				height:300px;
+				width:300px;
+				border:10px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="images/light-bulb.png" id="im1">
+			<img src="images/image1.jpeg" id="im2">
+			<button onclick="swap()">Swap Image</button>
+		</div>
+		<script>
+		function swap(){
+			const image1=document.querySelector("#im1");
+			const image2=document.querySelector("#im2");
+			const m1=image1.src;
+			const m2=image2.src;
+			image2.src=m1;
+			image1.src=m2;
+			}
+		</script>
+	</body>
+</html>

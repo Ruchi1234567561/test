@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Student Form</title>
+		<style>
+			form{
+				width:35%;
+				margin:auto;
+			}
+			fieldest{
+				padding:20px 40px;
+			}
+			h1{
+				text-align:center;
+				color:#f00;
+			}
+			input{
+				height:40px;
+				width:95px%;
+				border:2px solid orangered;
+				border-radius:40px;
+				margin:10px 0px;
+				font-size:18px;
+				padding-left:10px;
+			}
+			label{
+				font-size:18px;
+				text-transform:uppercase;
+				padding-left:8px;
+			}
+			span{
+				color:red
+			}
+		</style>
+	</head>
+	<body>
+	  <h1>Student Info</h1>
+		<form>
+	        <fieldset>
+				<legend>Student Info</legend>
+				<label for="name">Name<span>*</span></label><br>
+				<input type="text" placeholder="Enter Your name" required/><br><br>
+				<label for="mob">Mobile No.<span>*</span></label><br>
+				<input type="Number" placeholder="Enter Your Mobile Number"><br><br>
+				<label for="email">Email<span>*</span></label><br>
+				<input type="email" placeholder="Enter Your Email"><br><br>
+				<label>Enroll Id</label><br>
+				<input type="text" value="E2425000730" readonly><br>
+				<input type="date"><br>
+				<input type="color"><br>
+				<input type="datetime-local"><br>
+				<input type="password"><br>
+				<input type="submit"><br>
+				<input type="reset"><br>
+				<input type="file"><br>
+				<input type="hidden"><br>
+				<input type="search"><br>
+				<input type="month"><br>
+			</fieldset>
+			<button type="submit">Submit</button>
+			<button type="reset">Clear</button>
+		</form>
+	</body>
+</html>

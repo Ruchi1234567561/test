@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Student Form</title>
+		<style>
+			h1{
+				text-align:center;
+				color:#00f;
+			}
+			hr{
+				background:black;
+				height:10px;
+				width:900px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Student Form</h1>
+		<hr>
+		<form method="post">
+			<fieldset>
+				<legend><b>Student Record</b></legend>
+				<input type="text" placeholder="Enter Your Name" name="name"><br><br>
+				<label><b>Gender</b></label><br>
+				<input type="radio" name="Gender">Male
+				<input type="radio" name="Gender">Female
+				<input type="radio" name="Gender">Other<br><br>
+				<label><b>Qalification</b></label><br>
+				<input type="checkbox" name="Qali">Highschool
+				<input type="checkbox" name="Qali">Intermediate
+				<input type="checkbox" name="Qali">B.Sc
+				<input type="checkbox" name="Qali">B.A
+				<input type="checkbox" name="Qali">BCA<br><br>
+				<label><b>City</b></label><br>
+				<select name="city">
+					<option>-----Select City----</option>
+					<option>Ambedkar Nagar</option>
+					<option>Ayodhya</option>
+					<option>Basti</option>
+					<option>Lucknow</option>
+				</select><br><br>
+				<label><b>Address</b></label><br>
+				<textarea name="add" rows="10" cols="20"></textarea><br><br>
+				<input type="Submit" value="Send Data">
+				<input type="reset" value="clear">
+			</fieldset>
+		</form>
+	</body>
+</html>
